@@ -1,0 +1,163 @@
+
+ <ion-header>
+ <ion-navbar color="color1">
+  <ion-title>tab1</ion-title>
+</ion-navbar>
+</ion-header>
+ 
+ 
+ 
+ 
+ <ion-content padding>
+    
+<ion-list >
+    
+    <!--<ion-item *ngFor="let item of items |async" navParams="{inscription:item}">
+          {{item.titlebirth}}
+          <button ion-button class="left"  color="danger" (click)="removeinscription(inscription)"><ion-icon name="trash"></ion-icon></button>
+        </ion-item>
+      -->
+
+        <ion-item-divider color="color11">formulaire</ion-item-divider>
+
+      <!-- <ion-item>
+          <ion-label color="color1">Département</ion-label>
+          <ion-input placeholder="Département"  [(ngModel)]="inscription.departement"></ion-input>
+          </ion-item>--> 
+
+        <!-- <ion-item>
+            <ion-label color="color1">Date</ion-label>
+
+            <ion-datetime placeholder="date"  displayFormat="MM/DD/YYYY" [(ngModel)]="myDate" [(ngModel)]="inscription.dateb"></ion-datetime>
+             </ion-item>--> 
+
+
+<!--
+              <ion-item>
+                <ion-label color="color1">Cycle</ion-label>
+
+            <ion-textarea placeholder="Cycle" [(ngModel)]="inscription.cycle" ></ion-textarea>
+          </ion-item>
+
+          <ion-item>
+            <ion-label color="color1">Spécialité</ion-label>
+
+        <ion-textarea placeholder="Spécialité" [(ngModel)]="inscription.specialite" ></ion-textarea>
+      </ion-item>
+      
+  -->
+  
+    <ion-label color="color1">MOS</ion-label>
+    <ion-list radio-group [(ngModel)]="inscription.mos">
+            <ion-item>
+              <ion-label>Word</ion-label>
+              <ion-radio value="World" checked></ion-radio>
+            </ion-item>
+            <ion-item>
+              <ion-label>Excel</ion-label>
+              <ion-radio value="Excel"></ion-radio>
+            </ion-item>
+            <ion-item>
+              <ion-label>PowerPoint</ion-label>
+              <ion-radio value="PowerPoint" [disabled]="isDisabled"></ion-radio>
+            </ion-item>
+            <ion-item>
+              <ion-label>Access</ion-label>
+              <ion-radio value="Access" [disabled]="isDisabled"></ion-radio>
+            </ion-item>
+            <ion-item>
+              <ion-label>Outlook</ion-label>
+              <ion-radio value="Outlook" [disabled]="isDisabled"></ion-radio>
+            </ion-item>
+    </ion-list>
+
+
+
+        
+  <ion-label color="color1">MTA</ion-label>
+  <ion-item>
+        <ion-select  placeholder="Choix 1"  [(ngModel)]="inscription.mtachoix1">
+            <ion-option value="sécurité">sécurité</ion-option>
+            <ion-option value="adminstration">adminstration</ion-option>
+            <ion-option value="web">web</ion-option>
+            <ion-option value=".net">.net</ion-option>
+            <ion-option value="python">python</ion-option>
+
+          </ion-select>
+    </ion-item>
+  <ion-item>
+        <ion-select placeholder="Choix 2"  [(ngModel)]="inscription.mtachoix2">
+            <ion-option value="sécurité">sécurité</ion-option>
+            <ion-option value="adminstration">adminstration</ion-option>
+            <ion-option value="web">web</ion-option>
+            <ion-option value=".net">.net</ion-option>
+            <ion-option value="python">python</ion-option>
+
+          </ion-select>
+    </ion-item>
+  <ion-item>
+        <ion-select placeholder="Choix 3"  [(ngModel)]="inscription.mtachoix3">
+            <ion-option value="sécurité">sécurité</ion-option>
+            <ion-option value="adminstration">adminstration</ion-option>
+            <ion-option value="web">web</ion-option>
+            <ion-option value=".net">.net</ion-option>
+            <ion-option value="python">python</ion-option>
+
+          </ion-select>
+    </ion-item>
+
+
+          <button ion-button round outline color="color1"  (click)="addInscription(inscription)" >s'inscrire</button>
+        </ion-list>
+      
+  </ion-content>
+
+  <!-- <h2 id="menus" class="section-header">Menus</h2>
+<ion-list radio-group [(ngModel)]="relationship">
+  <ion-item>
+    <ion-label>Friends</ion-label>
+    <ion-radio value="friends" checked></ion-radio>
+  </ion-item>
+  <ion-item>
+    <ion-label>Family</ion-label>
+    <ion-radio value="family"></ion-radio>
+  </ion-item>
+  <ion-item>
+    <ion-label>Enemies</ion-label>
+    <ion-radio value="enemies" [disabled]="isDisabled"></ion-radio>
+  </ion-item>
+</ion-list>
+<ion-menu [content]="content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+     
+      <button ion-item (click)="navigateToinscriptionPage()">
+        inscription
+      </button>
+      <button ion-item (click)="navigateToDiaryPage()">
+        Diary
+      </button>
+      <button ion-item (click)="navigateToMeetingPage()">
+      Meeting
+      </button>
+
+      <button ion-item (click)="navigateToTripPage()">
+        Trip
+        </button>
+
+        <button ion-item (click)="navigateToExamPage()">
+          Exam
+          </button>
+          <button ion-item (click)="navigateToHomePage()">
+        Log out
+          </button>
+    </ion-list>
+    
+  </ion-content>
+</ion-menu> -->
+  

@@ -1,0 +1,88 @@
+
+
+<ion-content padding >
+    <ion-tabs color="colortheme">
+        <ion-tab tabIcon="contact" tabTitle="Profil"[root]="examRoot"  ></ion-tab>
+        <ion-tab  tabIcon="book" tabTitle="Insription" [root]="birthdayRoot" ></ion-tab>
+        <ion-tab tabIcon="book" tabTitle="Résultat" [root]="tripRoot"  ></ion-tab>
+        <ion-tab tabIcon="time"  tabTitle="Historique"  [root]="meetingRoot"></ion-tab>
+        <ion-tab  tabIcon="albums" tabTitle="tab5" [root]="diaryRoot" ></ion-tab>
+       </ion-tabs>
+</ion-content>
+
+<!-- <h2 id="menus" class="section-header">Menus</h2>
+<ion-menu [content]="content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+     
+      <button ion-item (click)="navigateToBirthdayPage()">
+        Birthday
+      </button>
+      <button ion-item (click)="navigateToDiaryPage()">
+        Diary
+      </button>
+      <button ion-item (click)="navigateToMeetingPage()">
+      Meeting
+      </button>
+
+      <button ion-item (click)="navigateToTripPage()">
+        Trip
+        </button>
+
+        <button ion-item (click)="navigateToExamPage()">
+          Exam
+          </button>
+          <button ion-item (click)="navigateToHomePage()">
+        Log out
+          </button>
+    </ion-list>
+    
+  </ion-content>
+</ion-menu>
+
+<ion-nav id="nav" #content [root]="rootPage"></ion-nav> -->
+
+<!-- 
+<ion-menu [content]="content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <button ion-item (click)="openPage(homePage)">
+        Home
+      </button>
+      <button ion-item (click)="openPage(BirthdayPage)">
+        Birthday
+      </button>
+      <button ion-item (click)="openPage(DiaryPage)">
+        Diary
+      </button>
+      <button ion-item (click)="openPage(MeetingPage)">
+      Meeting
+      </button>
+
+      <button ion-item (click)="openPage(TripPage)">
+        Trip
+        </button>
+
+        <button ion-item (click)="openPage(ExamPage)">
+          Exam
+          </button>
+  
+
+      <button ion-item (click)="closeMenu()">
+        Close Menu
+      </button>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+<ion-nav id="nav" #content [root]="rootPage"></ion-nav>
+-->

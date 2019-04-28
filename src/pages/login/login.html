@@ -1,0 +1,57 @@
+<ion-header>
+
+  <ion-navbar color="colortheme">
+    <ion-title>Login</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-item>
+  <ion-label floating color="colortheme" >  Email </ion-label>
+  <ion-input type="text" [(ngModel)]="user.email"> </ion-input>
+</ion-item>
+
+  <ion-item>
+    <ion-label floating color="colortheme">  Password</ion-label>
+    <ion-input type="password" [(ngModel)]="user.password"> </ion-input>
+  </ion-item>
+
+  
+    
+      
+<button ion-button block color="colortheme" (click)="login(user)">Login</button> 
+
+<!--<button ion-button block color="light" (click)="register()">Register</button> -->
+<ion-list>
+
+<!--<ion-item><ion-label></ion-label><ion-label class="testclass" color="color1">E</ion-label><ion-label class="testclass" color="color2">P</ion-label><ion-label></ion-label></ion-item>-->
+<ion-item><ion-label class="testclass" color="danger">E</ion-label><ion-label class="testclass" color="colortheme">P</ion-label><ion-label class="testclass" color="danger">I</ion-label></ion-item>
+</ion-list> 
+   
+</ion-content>
+
+
+<ion-footer>
+  <ion-row>
+ <div class="fab-container" style="padding-top:80px;">
+   <ion-fab left bottom>
+       <button ion-fab color="primary">
+        <ion-icon name="log-in">
+        </ion-icon>
+       </button>
+
+     <ion-fab-list side="right">
+      <button ion-fab color="light"><ion-icon name="logo-facebook"></ion-icon></button>
+     <!--  <button ion-fab color="light"><ion-icon name="logo-twitter"></ion-icon></button>-->
+       <button ion-fab color="light"><ion-icon name="logo-googleplus"></ion-icon></button>  
+    <!--   <button ion-fab color="light"><ion-icon name="logo-github"></ion-icon></button> -->
+     </ion-fab-list>
+      
+   </ion-fab>
+
+    </div>
+  </ion-row>
+</ion-footer>
+

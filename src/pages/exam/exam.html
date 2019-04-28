@@ -1,0 +1,98 @@
+<!--
+  Generated template for the ExamPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar color="color5">
+     <ion-title>profil</ion-title>
+   </ion-navbar>
+   </ion-header>
+
+   <ion-content padding>
+
+      <ion-list >
+
+  <!--  <ion-item *ngFor="let item of itemse |async" navParams="{exam:item}">
+      {{item.nameexam}}
+      <button ion-button class="left"  color="danger" (click)="removeExam(exam)"><ion-icon name="trash"></ion-icon></button>
+   
+    </ion-item>
+ -->
+ <!--   <ion-item>
+            <ion-label color="color5">Date</ion-label>
+
+            <ion-datetime placeholder="date" displayFormat="MM/DD/YYYY" [(ngModel)]="myDate" [(ngModel)]="exam.datee"></ion-datetime>
+          </ion-item>
+
+        --> 
+
+    <ion-item-divider color="color55">Ajouter votre profil</ion-item-divider>
+        <ion-item>
+          <ion-label color="color5">Nom</ion-label>
+          <ion-input placeholder="nom" [(ngModel)]="profil.nom"></ion-input>
+        </ion-item>
+        <ion-item>
+                <ion-label color="color5">Prenom</ion-label>
+
+                <ion-input placeholder="prenom" [(ngModel)]="profil.prenom"></ion-input>
+          </ion-item>
+   <!--       <ion-item>
+            <ion-label color="color5">Niveau</ion-label>
+
+            <ion-input placeholder="niveau" [(ngModel)]="profil.niveau"></ion-input>
+      </ion-item>-->
+      <ion-item>
+        <ion-label color="color5">email</ion-label>
+
+        <ion-input placeholder="email" [(ngModel)]="profil.email"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label color="color5">Telephone</ion-label>
+
+    <ion-input placeholder="Telephone" [(ngModel)]="profil.telephone"></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label color="color5">Département</ion-label>
+  <ion-select  placeholder="Departement" [(ngModel)]="profil.departement">
+      <ion-option value="EPI-POLYTEC">EPI-POLYTEC</ion-option>
+      <ion-option value="EPI-ARCH">EPI-ARCH</ion-option>
+      <ion-option value="EPI-BUSINESS SCHOOL">EPI-BUSINESS SCHOOL</ion-option>
+    </ion-select>
+</ion-item>
+<ion-item>
+  <ion-label color="color5">Spécialité</ion-label>
+  <ion-select  placeholder="Spécialité" [(ngModel)]="profil.Specialite">
+      <ion-option value="Cycle Préparatoire Integré">Cycle Préparatoire Integré</ion-option>
+      <ion-option value="Génie Informatique">Génie Informatique</ion-option>
+      <ion-option value="Génie Electrique">Génie Electrique</ion-option>
+      <ion-option value="Génie Electromécanique">Génie Electromécanique</ion-option>
+      <ion-option value="Génie Industriel">Génie Industriel</ion-option>
+      <ion-option value="Génie Mécanique">Génie Mécanique</ion-option>
+      <ion-option value="Génie Civil">Génie Civil</ion-option>
+      <ion-option value="Architecture">Architecture</ion-option>
+      <ion-option value="Comptabilité">Comptabilité</ion-option>
+      <ion-option value="Logistique">Logistique</ion-option>
+      <ion-option value="Finance">Finance</ion-option>
+      <ion-option value="Marketing">Marketing</ion-option>
+      <ion-option value="Logistique">Logistique</ion-option>
+      <ion-option value="Administration Des Affaires">Administration Des Affaires</ion-option>
+    </ion-select>
+</ion-item>
+
+<ion-item>
+  <ion-label color="color5">Cycle</ion-label>
+  <ion-select  placeholder="cycle" [(ngModel)]="profil.cycle">
+    <ion-option value="Préparatoire">Préparatoire</ion-option>
+    <ion-option value="Ingénieur">Ingénieur</ion-option>
+    <ion-option value="Architecture">Architecture</ion-option>
+    <ion-option value="Licence">Licence</ion-option>
+    <ion-option value="Masters">Masters</ion-option>
+
+  </ion-select>
+</ion-item>
+          <button ion-button round outline color="color5" (click)="addProfil(profil)">Add</button>
+        </ion-list>
+   </ion-content>
+   
